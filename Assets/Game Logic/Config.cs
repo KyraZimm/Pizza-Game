@@ -13,4 +13,10 @@ public class Config : ScriptableObject
 
     [Header("Recipe Settings")]
     public Recipe[] ActiveRecipes;
+
+    [Header("Customer Settings")]
+    public GameObject CustomerPrefab;
+    public Color[] PossibleSpriteColors; //will be replaced with sprites once I do some basic artwork
+    public float CustomerSpawnIntervals;
+    public float SpaceBetweenCustomersAtCounter;
 }

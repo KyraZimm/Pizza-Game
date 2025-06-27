@@ -16,4 +16,10 @@ MonoBehaviour:
   SpawnPos: {x: 0, y: 0}
   HorizontalBounds: {x: -4, y: 8.5}
   VerticalBounds: {x: -4, y: 4}
-  ActiveRecipes: []
+  CustomerPrefab: {fileID: 5734863213766759035, guid: d8f0384cfa91d7f48b0bffe38abcd44d, type: 3}
+  PossibleSpriteColors:
+  - {r: 1, g: 0.7430634, b: 0, a: 1}
+  - {r: 0.9433962, g: 0.5903642, b: 0.849312, a: 1}
+  - {r: 0.5921569, g: 0.94509804, b: 0.81412625, a: 1}
+  CustomerSpawnIntervals: 5
+  SpaceBetweenCustomersAtCounter: 1
