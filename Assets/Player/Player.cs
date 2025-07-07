@@ -13,6 +13,8 @@ public class Player : MonoBehaviour
     private Vector2 verticalBounds;
     private Vector2 velocity;
 
+    public static Vector2 Position { get { return Instance.rb.position; } }
+
     private void Awake() {
         if (Instance != null) {
             Debug.LogWarning($"Destroying a newer instance of {nameof(Player)} on {gameObject.name} to preserve an older instance on {Instance.gameObject.name}.");
