@@ -6,12 +6,17 @@ public class Player : MonoBehaviour
 {
     public static Player Instance { get; private set; }
 
+    [Header("Physics")]
     [SerializeField] Rigidbody2D rb;
     [SerializeField] float speed;
+    [Header("Interaction")]
+    [SerializeField] Transform holdAnchor;
 
     private Vector2 horizontalBounds;
     private Vector2 verticalBounds;
     private Vector2 velocity;
+
+    private GameObject heldItem = null;
 
     public static Vector2 Position { get { return Instance.rb.position; } }
 
@@ -50,5 +55,17 @@ public class Player : MonoBehaviour
         velocity *= speed;
 
         rb.velocity = velocity;
+    }
+
+    public void HoldIten(GameObject item) {
+        if (heldItem != null) {
+            Debug.Log($"Already holding {heldItem.name}.");
+            return;
+        }
+
+        item.transform.SetParent(holdAnchor);
+        item.transform.localPosition = Vector3.zero;
+
+        heldItem = item;
     }
 }

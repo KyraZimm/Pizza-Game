@@ -545,6 +545,7 @@ MonoBehaviour:
   interactionTimeRequired: 4
   requiredPlayerRadius: 1
   timer: {fileID: 1752315553}
+  productPrefab: {fileID: 198529981998973728, guid: 6a4f948a63577d54d81519053ac4d1a6, type: 3}
 --- !u!61 &1521608619
 BoxCollider2D:
   m_ObjectHideFlags: 0
