@@ -63,7 +63,7 @@ public class GameManager : MonoBehaviour {
     }
 
     private void SpawnCustomer() {
-        Vector2 seatPos = new Vector2(lastCustomerSeatPos.x, lastCustomerSeatPos.y + config.SpaceBetweenCustomersAtCounter);
+        Vector2 seatPos = new Vector2(lastCustomerSeatPos.x + config.SpaceBetweenCustomersAtCounter, lastCustomerSeatPos.y);
         Customer customer = Instantiate(config.CustomerPrefab, customerEntryPoint.position, Quaternion.identity).GetComponent<Customer>();
         
         //safety check

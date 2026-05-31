@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayerPrefab: {fileID: 5830188257692408385, guid: a30ad9ac4dc940542a7f6cf2cc15bd48, type: 3}
   SpawnPos: {x: 0, y: 0}
-  HorizontalBounds: {x: -4, y: 8.5}
-  VerticalBounds: {x: -4, y: 4}
+  HorizontalBounds: {x: -8.5, y: 8.5}
+  VerticalBounds: {x: -2, y: 4}
   ActiveRecipes: {fileID: 11400000, guid: b586a47249cc09441b92f70dd9852cbf, type: 2}
   CustomerPrefab: {fileID: 5734863213766759035, guid: d8f0384cfa91d7f48b0bffe38abcd44d, type: 3}
   PossibleSpriteColors:
